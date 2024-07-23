@@ -1,5 +1,10 @@
-import Image from "next/image";
+import { SignOut } from "./components/SignOut";
 
 export default function Home() {
-  return <div>Hello</div>;
+  return (
+    <div>
+      <div>Hello</div>
+      <SignOut />
+    </div>
+  );
 }
