@@ -1,4 +1,4 @@
-import { SignIn } from "@/app/components/SignIn";
+import UserButton from "@/app/components/usr-button";
 import { supabase } from "@/db";
 
 export default async function Home() {
@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <div>
       <div>Hello</div>
-      <SignIn />
+      <UserButton />
       <div>
         {data?.map((itme) => {
           return (

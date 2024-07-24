@@ -1,4 +1,4 @@
-import { SignOut } from "@/app/components/SignOut";
+import { SignOut } from "@/app/components/signOut";
 import { auth } from "@/auth";
 import React from "react";
 import Image from "next/image";
