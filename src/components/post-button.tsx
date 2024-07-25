@@ -1,13 +1,14 @@
+import { auth } from "@/auth";
 import React from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "./ui/button";
 import CreatePost from "./create-post";
-import { auth } from "@/auth";
 
 const PostButton = async () => {
   const session = await auth();
