@@ -1,7 +1,7 @@
 import React from "react";
 
 const MainNav = () => {
-  return <div>MainNav</div>;
+  return <div>Henn</div>;
 };
 
 export default MainNav;
