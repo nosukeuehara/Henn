@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <div>
           <Header />
-          <main>{children}</main>
+          <main className="flex-1 flex flex-col sm:mx-44">{children}</main>
         </div>
       </body>
     </html>
