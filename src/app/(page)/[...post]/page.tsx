@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { supabase } from "@/db";
 import React from "react";
 
 const createPost = () => {
@@ -8,6 +9,12 @@ const createPost = () => {
     const rawFormData = {
       title: formData.get("title"),
     };
+
+    const { data, error } = await supabase
+      .from("posts-db")
+      .insert([{ title: rawFormData.title.toString() }])
+      .select();
+    console.log(error);
   }
 
   return (
