@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -19,6 +20,13 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 >>>>>>> 8d290f4 (こみこみっと)
+=======
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
+import { cva, type VariantProps } from "class-variance-authority";
+
+import { cn } from "@/lib/utils";
+>>>>>>> 8dcfe5d855f1e13cc185b9ede1c978c8a7a93e0e
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -49,6 +57,7 @@ const buttonVariants = cva(
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 );
 =======
 )
@@ -56,10 +65,14 @@ const buttonVariants = cva(
 =======
 );
 >>>>>>> 8d290f4 (こみこみっと)
+=======
+);
+>>>>>>> 8dcfe5d855f1e13cc185b9ede1c978c8a7a93e0e
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   asChild?: boolean;
@@ -69,10 +82,14 @@ export interface ButtonProps
 =======
   asChild?: boolean;
 >>>>>>> 8d290f4 (こみこみっと)
+=======
+  asChild?: boolean;
+>>>>>>> 8dcfe5d855f1e13cc185b9ede1c978c8a7a93e0e
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     const Comp = asChild ? Slot : "button";
@@ -82,6 +99,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 =======
     const Comp = asChild ? Slot : "button";
 >>>>>>> 8d290f4 (こみこみっと)
+=======
+    const Comp = asChild ? Slot : "button";
+>>>>>>> 8dcfe5d855f1e13cc185b9ede1c978c8a7a93e0e
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
@@ -90,12 +110,16 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8dcfe5d855f1e13cc185b9ede1c978c8a7a93e0e
     );
   }
 );
 Button.displayName = "Button";
 
 export { Button, buttonVariants };
+<<<<<<< HEAD
 =======
     )
 =======
@@ -111,3 +135,5 @@ export { Button, buttonVariants }
 =======
 export { Button, buttonVariants };
 >>>>>>> 8d290f4 (こみこみっと)
+=======
+>>>>>>> 8dcfe5d855f1e13cc185b9ede1c978c8a7a93e0e
