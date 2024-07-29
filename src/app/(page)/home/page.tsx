@@ -1,9 +1,8 @@
 import { createClient } from "@/utils/supabase/client";
 
 const page = async () => {
-  const supabase = createClient();
+  const supabase = await createClient();
   let { data, error } = await supabase.from("posts-db").select("*");
-  console.log(data);
   return (
     <div>
       {data?.map((d) => {
