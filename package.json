@@ -9,13 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a7609 (test)
+    "@auth/supabase-adapter": "^1.4.1",
+=======
+>>>>>>> 26ac3a2 (supabase削除)
+=======
+    "@auth/supabase-adapter": "^1.4.1",
+>>>>>>> 8dcfe5d (supabaseのポリシーを突破したかった日のコミット)
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
-    "@supabase/supabase-js": "^2.44.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.414.0",
+<<<<<<< HEAD
+=======
+    "@supabase/supabase-js": "^2.44.4",
+>>>>>>> 3578ec3 (supabaseのセットアップとauthの機能追加)
+=======
+>>>>>>> 03a7609 (test)
     "next": "14.2.5",
     "next-auth": "^5.0.0-beta.19",
     "react": "^18",
@@ -24,6 +42,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
