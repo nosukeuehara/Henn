@@ -1,10 +1,3 @@
-import { SignOut } from "./components/SignOut";
-
-export default function Home() {
-  return (
-    <div>
-      <div>Hello</div>
-      <SignOut />
-    </div>
-  );
+export default async function Home() {
+  return <div>heheheh</div>;
 }
