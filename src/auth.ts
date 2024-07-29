@@ -5,8 +5,4 @@ export const config: NextAuthConfig = {
   providers: [Google],
   basePath: "/api/auth", // apiのパス
 }
-export const { handlers, auth, signIn, signOut } = NextAuth({
-  providers: [Google],
-  basePath: "/api/auth",
-
-})
+export const { handlers, auth, signIn, signOut } = NextAuth(config)

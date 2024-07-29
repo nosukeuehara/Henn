@@ -1,14 +1,24 @@
 import { Button } from "@/components/ui/button";
+import { createClient } from "@/utils/supabase/client";
 
 import React from "react";
 
-const createPost = () => {
+const createPost = async () => {
   async function createPost(formData: FormData) {
     "use server";
 
     const rawFormData = {
       title: formData.get("title"),
     };
+    const supabase = await createClient();
+    await supabase
+      .from("posts-db")
+      .insert([
+        {
+          title: rawFormData.title,
+        },
+      ])
+      .select();
   }
 
   return (
