@@ -12,6 +12,8 @@ import { auth } from "@/auth";
 const PostButton = async () => {
   const session = await auth();
   if (!session?.user) return null;
+  if (session.user.role === "visitor") return null;
+
   return (
     <div className="flex gap-2 items-center">
       <span className="hidden text-sm sm:inline-flex"></span>

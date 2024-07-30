@@ -16,7 +16,6 @@ import { SignOut } from "./signOut";
 const UserButton = async () => {
   const session = await auth();
   if (!session?.user) return <SignIn />;
-  const user = session.user;
 
   return (
     <div className="flex gap-2 items-center">
